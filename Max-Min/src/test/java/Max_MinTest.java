@@ -41,4 +41,22 @@ class Max_MinTest extends Max_Min {
         assertEquals("Third number is Maximum",m.maximumFloat(8.9f,4.9f,9.0f));
     }
 
+    @Test
+    void firstNumberIsMaximumString(){
+        Max_Min m = new Max_MinTest();
+        assertEquals("First String is Maximum",m.maximumString("Apple","Peach","Banana"));
+    }
+
+    @Test
+    void secondNumberIsMaximumString(){
+        Max_Min m = new Max_MinTest();
+        assertEquals("Second String is Maximum",m.maximumString("Apple","Peach","Banana"));
+    }
+    @Test
+    void thirdNumberIsMaximumString(){
+        Max_Min m = new Max_MinTest();
+        assertEquals("Third String is Maximum",m.maximumString("Apple","Peach","Banana"));
+    }
+
+
 }

@@ -22,4 +22,23 @@ class Max_MinTest extends Max_Min {
         assertEquals("Third number is Maximum",m.maximum(6,4,9));
     }
 
+    @Test
+    void firstNumberIsMaximumFloat(){
+        Max_Min m = new Max_MinTest();
+        assertEquals("First number is Maximum",m.maximumFloat(7.8f,4.5f,3.0f));
+    }
+
+    @Test
+    void secondNumberIsMaximumFloat(){
+        Max_Min m = new Max_MinTest();
+        assertEquals("Second number is Maximum",m.maximumFloat(6.0f,7.9f,1.0f));
+    }
+
+
+    @Test
+    void thirdNumberIsMaximumFloat(){
+        Max_Min m = new Max_MinTest();
+        assertEquals("Third number is Maximum",m.maximumFloat(8.9f,4.9f,9.0f));
+    }
+
 }
